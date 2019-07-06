@@ -2,6 +2,12 @@
 
 Copy all tab URLs in the current window.
 
+<div align="center">
+  <p>
+    <img src="https://raw.githubusercontent.com/peterthehan/copy-tabs/master/assets/demo.gif" title="Copy Tabs" />
+  </p>
+</div>
+
 # Installation
 
 1. Download and extract [Copy Tabs](https://github.com/peterthehan/copy-tabs/archive/master.zip).
