@@ -13,15 +13,13 @@ const copyToClipboard = str => {
 
 chrome.browserAction.onClicked.addListener(_ => {
   chrome.tabs.query({ currentWindow: true }, tabs => {
-    if (!tabs.length) return;
-
     const tabsString = tabs.map(tab => tab.url).join('\n');
     copyToClipboard(tabsString);
 
     chrome.notifications.create({
       type: 'basic',
       iconUrl: 'assets/clipboard_48.png',
-      title: 'Copied tab URLs!',
+      title: `Copied ${tabs.length} tab URL${tabs.length === 1 ? '' : 's'}!`,
       message: tabsString
     });
   });
