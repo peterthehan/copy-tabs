@@ -1,5 +1,7 @@
 # Copy Tabs
 
+# About
+
 Copy all tab URLs in the current window.
 
 <div align="center">
