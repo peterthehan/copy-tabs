@@ -1,12 +1,14 @@
-# Copy Tabs
+<div>
+  <img src="https://raw.githubusercontent.com/peterthehan/copy-tabs/master/assets/clipboard_128.png" title="Copy Tabs" />
+</div>
 
-# About
+# Copy Tabs
 
 Copy all tab URLs in the current window.
 
 <div align="center">
   <p>
-    <img src="https://raw.githubusercontent.com/peterthehan/copy-tabs/master/assets/demo.gif" title="Copy Tabs" />
+    <img src="https://raw.githubusercontent.com/peterthehan/copy-tabs/master/assets/demo.gif" title="Demo" />
   </p>
 </div>
 
