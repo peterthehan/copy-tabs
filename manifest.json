@@ -1,18 +1,23 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Copy Tabs",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Copy all tab URLs in the current window.",
   "icons": {
     "16": "assets/clipboard_16.png",
     "48": "assets/clipboard_48.png",
     "128": "assets/clipboard_128.png"
   },
-  "browser_action": {},
+  "action": {},
   "author": "Peter Han",
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "service_worker": "background.js"
   },
-  "permissions": ["tabs", "notifications"]
+  "permissions": ["tabs", "notifications", "clipboardWrite"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["copy.js"]
+    }
+  ]
 }
